@@ -1,1 +1,58 @@
-[{"name":"iphone16","price":"80000","sale":"40000","id":"6781739c8f263","image":"hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg"},{"name":"Samsung Ultra S24","price":"55000","sale":"25700","id":"6781747d267d9","image":"Samsung-Galaxy-S24-Ultra_A_featured-image-packshot-review.jpg"},{"name":"Samsung Ultra S23","price":"30000","sale":"20000","id":"678174be26c43","image":"download.jpg"},{"name":"Red Magic 8Pro","price":"29800","sale":"19000","id":"678175447d1f2","image":"gsmarena_017.jpg"},{"name":"Red Magic 9Pro","price":"41999","sale":"41990","id":"6781759a31464","image":"red_magic_9_pro_02.jpg"},{"name":"Hummer H1","price":"1600000","sale":"1000000","id":"6781761eac158","image":"grande_mil-spec-hummer-h1.jpg"},{"name":"BMW G Power","price":"2700000","sale":"1900000","id":"67817db7b6607","image":"55742.jpg"}]
+[
+    {
+        "name": "iphone16",
+        "price": "80000",
+        "sale": "40000",
+        "id": "6781739c8f263",
+        "image": "hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg"
+    },
+    {
+        "name": "Samsung Ultra S24",
+        "price": "55000",
+        "sale": "25700",
+        "id": "6781747d267d9",
+        "image": "Samsung-Galaxy-S24-Ultra_A_featured-image-packshot-review.jpg"
+    },
+    {
+        "name": "Samsung Ultra S23",
+        "price": "30000",
+        "sale": "20000",
+        "id": "678174be26c43",
+        "image": "download.jpg"
+    },
+    {
+        "name": "Red Magic 8Pro",
+        "price": "29800",
+        "sale": "19000",
+        "id": "678175447d1f2",
+        "image": "gsmarena_017.jpg"
+    },
+    {
+        "name": "Red Magic 9Pro",
+        "price": "41999",
+        "sale": "41990",
+        "id": "6781759a31464",
+        "image": "red_magic_9_pro_02.jpg"
+    },
+    {
+        "name": "Hummer H1",
+        "price": "1600000",
+        "sale": "1000000",
+        "id": "6781761eac158",
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "BMW G Power",
+        "price": "2700000",
+        "sale": "1900000",
+        "id": "67817db7b6607",
+        "image": "55742.jpg"
+    },
+    {
+        "name": "BMW",
+        "price": "2000000",
+        "sale": "1500000",
+        "id": "67868de885e01",
+        "image": "55742.jpg"
+    }
+]

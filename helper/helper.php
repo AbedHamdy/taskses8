@@ -96,6 +96,39 @@
         header("location: $filePath");
     }
 
+    function getRandomData($array)
+    {
+        $randomNumber = array_rand($array);
+        return $array[$randomNumber];
+    }
+
+    function getIdForItem($item)
+    {
+        $id = $item->id;
+        return $id;
+    }
+
+    // function getDetailsProduct($filePath , $id)
+    // {
+    //     $products = getData($filePath);
+    //     $detailsProduct = [];
+    //     foreach($products as $product)
+    //     {
+    //         if($product->id == $id)
+    //         {
+    //             $detailsProduct = 
+    //             [
+    //                 "name" => $product->name,
+    //                 "price" => $product->price,
+    //                 "sale" => $product->sale,
+    //                 "id" => $product->id,
+    //                 "image" => $product->image
+    //             ];
+    //         }
+    //     }
+    //     return (object) $detailsProduct;        
+    // }
+
 
 
 
