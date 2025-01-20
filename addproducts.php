@@ -26,6 +26,15 @@
             <label for="productName" class="form-label">Product Name</label>
             <input type="text" class="form-control" id="productName" name="name" placeholder="Enter product name">
         </div>
+        <!-- input category -->
+        <div class="mb-3">
+            <label for="productCategory" class="form-label">Category</label>
+            <select class="form-select" id="productCategory" name="category">
+                <option value="" disabled selected>Select a category</option>
+                <option value="Cars">Cars</option>
+                <option value="Phones">Phones</option>
+            </select>
+        </div>
         <!-- input price -->
         <div class="mb-3">
             <label for="productPrice" class="form-label">Product Price</label>
@@ -34,7 +43,7 @@
         <!-- input sale -->
         <div class="mb-3">
             <label for="productSale" class="form-label">Sale Percentage</label>
-            <input type="number" class="form-control" id="productSale" name="sale" placeholder="Enter percentage" >
+            <input type="number" class="form-control" id="productSale" name="sale" placeholder="Enter percentage">
         </div>
         <!-- submit -->
         <button type="submit" class="btn btn-primary">Add Product</button>

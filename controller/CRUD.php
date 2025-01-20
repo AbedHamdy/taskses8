@@ -12,6 +12,7 @@
             $data[$key] = sanitizeInput($value);
         }
         $data["id"] = uniqid();
+        $data["quantity"] = 1;
 
         // image 
         if(isset($_FILES['image']) && $_FILES['image']['error'] == 0)
@@ -54,6 +55,16 @@
             $errors[] = "Product name must be less than 50 characters";
         }
 
+        // validation product category 
+        if(requireVale($data["category"]))
+        {
+            $errors[] = "Product category is required";
+        }
+        else if(maxVal($data["category"] ,50))
+        {
+            $errors[] = "Product category must be less than 50 characters";
+        }
+
         // validation product price
         if(requireVale($data["price"]))
         {
@@ -77,6 +88,14 @@
 
         if(empty($errors))
         {
+            if($data["category"] == "Cars")
+            {
+                AddProducts("../storage/cars.json" , $data);
+            }
+            else if($data["category"] == "Phones")
+            {
+                AddProducts("../storage/phones.json" , $data);
+            }
             AddProducts("../storage/products.json" , $data);
             redirect("../index.php");
         }

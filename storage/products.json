@@ -4,6 +4,7 @@
         "price": "80000",
         "sale": "40000",
         "id": "6781739c8f263",
+        "quantity": 1,
         "image": "hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg"
     },
     {
@@ -11,6 +12,7 @@
         "price": "55000",
         "sale": "25700",
         "id": "6781747d267d9",
+        "quantity": 1,
         "image": "Samsung-Galaxy-S24-Ultra_A_featured-image-packshot-review.jpg"
     },
     {
@@ -18,6 +20,7 @@
         "price": "30000",
         "sale": "20000",
         "id": "678174be26c43",
+        "quantity": 1,
         "image": "download.jpg"
     },
     {
@@ -25,6 +28,7 @@
         "price": "29800",
         "sale": "19000",
         "id": "678175447d1f2",
+        "quantity": 1,
         "image": "gsmarena_017.jpg"
     },
     {
@@ -32,6 +36,7 @@
         "price": "41999",
         "sale": "41990",
         "id": "6781759a31464",
+        "quantity": 1,
         "image": "red_magic_9_pro_02.jpg"
     },
     {
@@ -39,6 +44,7 @@
         "price": "1600000",
         "sale": "1000000",
         "id": "6781761eac158",
+        "quantity": 1,
         "image": "grande_mil-spec-hummer-h1.jpg"
     },
     {
@@ -46,6 +52,7 @@
         "price": "2700000",
         "sale": "1900000",
         "id": "67817db7b6607",
+        "quantity": 1,
         "image": "55742.jpg"
     },
     {
@@ -53,6 +60,88 @@
         "price": "2000000",
         "sale": "1500000",
         "id": "67868de885e01",
+        "quantity": 1,
         "image": "55742.jpg"
+    },
+    {
+        "name": "hum",
+        "category": "car",
+        "price": "12121",
+        "sale": "111",
+        "id": "678d77983e7c2",
+        "quantity": 1,
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "marsed",
+        "category": "car",
+        "price": "12121",
+        "sale": "123",
+        "id": "678d79c6e9b92",
+        "quantity": 1,
+        "image": "55742.jpg"
+    },
+    {
+        "name": "hummm",
+        "category": "car",
+        "price": "1212112121",
+        "sale": "213121",
+        "id": "678d868bd782d",
+        "quantity": 1,
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "bmw",
+        "category": "car",
+        "price": "112312312",
+        "sale": "12312312",
+        "id": "678d8a18bb4a6",
+        "quantity": 1,
+        "image": "55742.jpg"
+    },
+    {
+        "name": "hummer  hhh1",
+        "category": "Cars",
+        "price": "1212111",
+        "sale": "11112",
+        "id": "678d8b62c87da",
+        "quantity": 1,
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "hummers",
+        "category": "Cars",
+        "price": "12121",
+        "sale": "11",
+        "id": "678d8baeb7b46",
+        "quantity": 1,
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "hummmmmers H1",
+        "category": "Cars",
+        "price": "12312312",
+        "sale": "1231312",
+        "id": "678d8bf33db98",
+        "quantity": 1,
+        "image": "grande_mil-spec-hummer-h1.jpg"
+    },
+    {
+        "name": "Red Magic 8Pro",
+        "category": "Phones",
+        "price": "12121",
+        "sale": "1233",
+        "id": "678d8d6e19072",
+        "quantity": 1,
+        "image": "gsmarena_017.jpg"
+    },
+    {
+        "name": "iphone 15",
+        "category": "Phones",
+        "price": "130000",
+        "sale": "120000",
+        "id": "678d943e8471a",
+        "quantity": 1,
+        "image": "hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg"
     }
 ]

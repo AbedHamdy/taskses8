@@ -22,6 +22,7 @@
                 {
                     $detailsProduct["price"] = $product->price;
                 }
+                $detailsProduct["quantity"] = $product->quantity;
             }
         }
         $productOfCart = getData("../storage/cart.json");

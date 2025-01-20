@@ -108,26 +108,7 @@
         return $id;
     }
 
-    // function getDetailsProduct($filePath , $id)
-    // {
-    //     $products = getData($filePath);
-    //     $detailsProduct = [];
-    //     foreach($products as $product)
-    //     {
-    //         if($product->id == $id)
-    //         {
-    //             $detailsProduct = 
-    //             [
-    //                 "name" => $product->name,
-    //                 "price" => $product->price,
-    //                 "sale" => $product->sale,
-    //                 "id" => $product->id,
-    //                 "image" => $product->image
-    //             ];
-    //         }
-    //     }
-    //     return (object) $detailsProduct;        
-    // }
+    
 
 
 

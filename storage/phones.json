@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Red Magic 8Pro",
+        "category": "Phones",
+        "price": "12121",
+        "sale": "1233",
+        "id": "678d8d6e19072",
+        "quantity": 1,
+        "image": "gsmarena_017.jpg"
+    },
+    {
+        "name": "iphone 15",
+        "category": "Phones",
+        "price": "130000",
+        "sale": "120000",
+        "id": "678d943e8471a",
+        "quantity": 1,
+        "image": "hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg"
+    }
+]
