@@ -4,6 +4,8 @@
 ?> 
 
     <a href="./addproducts.php" class="btn btn-primary position-absolute" style="top: 100px; right: 30px;">Add Product</a>
+    <a href="./detailsProduct.php" class="btn btn-primary position-absolute" style="top: 100px; left: 30px;">Details</a>
+
     <?php 
         $details = getData("./storage/userOrder.json");
         // echo "<pre>";
@@ -47,24 +49,15 @@
                                 <tbody>
                                     <?php 
                                         $numberProduct = 1;
-                                        foreach($order->products as $product) : 
-                                         
+                                        foreach($order->products as $product) :   
                                     ?>
                                             <tr>
                                                 <td><?= $numberProduct++; ?></td>
                                                 <td><?= $product->name; ?></td>
                                                 <td><?= $product->price; ?></td>
                                                 <td><?= $product->quantity; ?></td>
-                                            </tr>
-                                            
-                                            
+                                            </tr>                                            
                                     <?php endforeach; ?>
-                                    <!-- <tr>
-                                        <td>2</td>
-                                        <td>Product B</td>
-                                        <td>$20</td>
-                                        <td>1</td>
-                                    </tr> -->
                                 </tbody>
                             </table>
                         </td>

@@ -15,7 +15,7 @@
             if($user->email == $data["email"] && $user->password == $data["password"])
             {
                 $checkOut++;
-                $_SESSION["user"] = [$user->fname , $user->lname , $user->email];
+                $_SESSION["admin"] = [$user->fname , $user->lname , $user->email];
                 redirect("../admin.php");
             }
         }
