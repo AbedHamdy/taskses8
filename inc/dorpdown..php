@@ -8,5 +8,4 @@
             <li><a class="dropdown-item" href="./productsPhones.php">Phones</a></li>
             <li><a class="dropdown-item" href="./allproducts.php">All Products</a></li>
         </ul>
-    </div>
-    <a href="./addproducts.php" class="btn btn-primary position-absolute" style="top: 100px; right: 30px;">Add Product</a>
+</div>

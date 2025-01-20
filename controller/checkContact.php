@@ -79,7 +79,7 @@
         {
             $users = getData("../storage/userOrder.json");
             $products = getData("../storage/cart.json");
-            $data[] = $products;
+            $data["products"] = $products;
             $users[] = $data;
             putData("../storage/userOrder.json" , $users);
             $_SESSION["done"] = "Successfully";

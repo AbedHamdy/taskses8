@@ -6,43 +6,55 @@
     $errors = [];
 
     if(checkRequestMethod("POST"))
+    {
+        foreach($_POST as $key => $value)
         {
-            foreach($_POST as $key => $value)
-            {
-                $$key = sanitizeInput($value);
-            }
+            $$key = sanitizeInput($value);
+        }
 
-            // validation email 
-            if(requireVale($email))
-            {
-                $errors[] = "email is required";
-            }
-            else if(emailVal($email))
-            {
-                $errors[] = "please type a valid email ";
-            }
+        // validation email 
+        if(requireVale($email))
+        {
+            $errors[] = "email is required";
+        }
+        else if(emailVal($email))
+        {
+            $errors[] = "please type a valid email ";
+        }
 
-            // validation password 
-            if(requireVale($password))
-            {
-                $errors[] = "password is required";
-            }
-            else if(minVal($password , 6))
-            {
-                $errors[] = "password must be grater than 6 chars ";
-            }
-            else if(maxVal($password , 25))
-            {
-                $errors[] = "password must be smaller than 25 chars ";
-            }
+        // validation password 
+        if(requireVale($password))
+        {
+            $errors[] = "password is required";
+        }
+        else if(minVal($password , 6))
+        {
+            $errors[] = "password must be grater than 6 chars ";
+        }
+        else if(maxVal($password , 25))
+        {
+            $errors[] = "password must be smaller than 25 chars ";
+        }
 
-            $data = 
-            [
-                "email" => $email,
-                "password" => sha1($password)
-            ];
+        // validation role
+        if(requireVale($role))
+        {
+            $errors[] = "Role is required";
+        }
+        else if($role != "user" && $role != "admin")
+        {
+            $errors[] = "Role must be user or admin ";
+        }
 
-            if(empty($errors))
+        $data = 
+        [
+            "email" => $email,
+            "password" => sha1($password)
+        ];
+
+        if(empty($errors))
+        {
+            if($role == "user")
             {
                 $users = getData("../storage/users.json");
                 $checkOut = 0;
@@ -57,18 +69,31 @@
                 }
                 if($checkOut == 0)
                 {
-                    $_SESSION["errors"] = "Please enter correct password and email";
+                    $errors[] = "Please enter the correct user password and email";
+                    $_SESSION["errors"] = $errors;
                     redirect("../login.php");
                 }
             }
+                else if ($role == "admin")
+            {
+                $_SESSION["data"] = $data;
+                redirect("./handleAdmin.php");
+            }
             else 
             {
+                $errors[] = "User and admin only allowed";
                 $_SESSION["errors"] = $errors;
                 redirect("../login.php");
             }
         }
         else 
         {
+            $_SESSION["errors"] = $errors;
             redirect("../login.php");
         }
+    }
+    else 
+    {
+        redirect("../login.php");
+    }
  ?>
