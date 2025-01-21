@@ -64,7 +64,7 @@
                     {
                         $checkOut++;
                         $_SESSION["user"] = [$user->fname , $user->lname , $user->email];
-                        redirect("../checkout.php");
+                        redirect("../index.php");
                     }
                 }
                 if($checkOut == 0)

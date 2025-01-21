@@ -74,16 +74,6 @@
             $errors[] = "password must be smaller than 25 chars ";
         }
 
-        // validation role
-        if(requireVale($role))
-        {
-            $errors[] = "Role is required";
-        }
-        else if($role != "admin")
-        {
-            $errors[] = "Role must be Admin ";
-        }
-        
         
         $data = 
         [
@@ -97,26 +87,10 @@
         
         if(empty($errors))
         {
-            if($role == "user")
-            {
-                $users = getData("../storage/users.json");
-                $users[] = $data;
-                putData("../storage/users.json", $users);
-                redirect("../login.php");
-            }
-            else if($role == "admin")
-            {
-                $users = getData("../storage/admin.json");
-                $users[] = $data;
-                putData("../storage/admin.json", $users);
-                redirect("../login.php");
-            }
-            else 
-            {
-                $errors[] = "User and admin only allowed";
-                $_SESSION["errors"] = $errors;
-                redirect("../register.php");
-            }
+            $users = getData("../storage/users.json");
+            $users[] = $data;
+            putData("../storage/users.json", $users);
+            redirect("../login.php");
         }
         else 
         {
@@ -128,6 +102,8 @@
     }
     else 
     {
+        $errors[] = "Don't play with the request";
+        $_SESSION["errors"] = $errors;
         redirect("../register.php");
     }
 

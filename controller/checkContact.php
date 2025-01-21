@@ -82,6 +82,7 @@
             $data["products"] = $products;
             $users[] = $data;
             putData("../storage/userOrder.json" , $users);
+            putData("../storage/cart.json" , []);
             $_SESSION["done"] = "Successfully";
             redirect("../checkout.php");
         }

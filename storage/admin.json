@@ -7,12 +7,14 @@
         "gender": "male",
         "password": "88ea39439e74fa27c09a4fc0bc8ebe6d00978392"
     },
-    {
-        "id": "678e2b11a3355",
-        "fname": "abed",
-        "lname": "hamdy",
-        "email": "m@m.com",
-        "gender": "male",
-        "password": "88ea39439e74fa27c09a4fc0bc8ebe6d00978392"
-    }
+    [
+        {
+            "id": "678f99a4176ec",
+            "fname": "Ronan",
+            "lname": "Giles",
+            "email": "jecut@mailinator.com",
+            "gender": "female",
+            "password": "88ea39439e74fa27c09a4fc0bc8ebe6d00978392"
+        }
+    ]
 ]

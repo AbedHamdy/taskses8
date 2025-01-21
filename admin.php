@@ -4,7 +4,6 @@
 ?> 
 
     <a href="./addproducts.php" class="btn btn-primary position-absolute" style="top: 100px; right: 30px;">Add Product</a>
-    <a href="./detailsProduct.php" class="btn btn-primary position-absolute" style="top: 100px; left: 30px;">Details</a>
 
     <?php 
         $details = getData("./storage/userOrder.json");
