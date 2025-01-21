@@ -40,7 +40,7 @@
                                     <td><?= $product->name; ?></td>
                                     <td><?= $product->price; ?></td>
                                     <td>
-                                        <input type="number" name="quantity[<?= $product->id ?>]" value="1">
+                                        <input type="number" name="quantity[<?= $product->id ?>]" value="<?= $product->quantity; ?>">
                                     </td>
                                     <td>
                                     <a href="./controller/DeleteInCart.php?id=<?= $product->id; ?>" class="btn btn-danger">

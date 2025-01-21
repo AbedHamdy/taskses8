@@ -25,8 +25,23 @@
                 $detailsProduct["quantity"] = $product->quantity;
             }
         }
+        
         $productOfCart = getData("../storage/cart.json");
-        $productOfCart[] = $detailsProduct;
+        $check = 0;
+        foreach($productOfCart as $product)
+        {
+            if($detailsProduct["id"] == $product->id)
+            {
+                $check++ ;
+                $product->quantity += 1;
+                break;
+            }
+        }
+
+        if($check == 0)
+        {
+            $productOfCart[] = $detailsProduct;
+        }
         putData("../storage/cart.json" , $productOfCart);
         redirect("../cart.php");
     }
