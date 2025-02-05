@@ -108,6 +108,17 @@
         return $id;
     }
 
+    function numberItem($path)
+    {
+        $products = getData($path);
+        $number = 0;
+        foreach($products as $product)
+        {
+            $number++;
+        }
+        return $number;
+    }
+
     
 
 

@@ -39,12 +39,15 @@
             $admins = getData("../storage/admin.json");
             $admins[] = $admin;
             putData("../storage/admin.json", $admins);
+            $success = [];
+            $success[] = "Status Changed Successfully";
+            $_SESSION["success"] = $success;
             redirect("../viewUsers.php");
         }
     }
     else 
     {
-        $errors[] = "Don't play with the required";
+        $errors[] = "Don't play with the request";
         $_SESSION["errors"] = $errors;
         redirect("../viewUsers.php");
     }

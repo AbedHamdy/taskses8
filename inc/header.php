@@ -28,14 +28,17 @@
                             <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                         <?php endif; ?>
                         <?php if(isset($_SESSION["admin"])) : ?>
+                            <li class="nav-item"><a class="nav-link" href="./admin.php">Admin</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Details
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="./admin.php">Orders</a></li>
+                                    <li><a class="dropdown-item" href="./orders.php">Orders</a></li>
                                     <li><a class="dropdown-item" href="./viewUsers.php">Users</a></li>
+                                    <li><a class="dropdown-item" href="./blockUsers.php">Block Users</a></li>
                                 </ul>
+
                             </li>
                         <?php endif; ?>
                             <?php if(!isset($_SESSION["user"]) && !isset($_SESSION["admin"])) :?>
@@ -63,8 +66,17 @@
 <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Shop in style</h1>
-            <p class="lead fw-normal text-white-50 mb-0">With this shop home page template</p>
+            <?php 
+                $pageName = basename($_SERVER['PHP_SELF'] , ".php");
+                if ($pageName != "index") :
+            ?>
+                <h1 class="display-4 fw-bolder">
+                    <?= ucwords($pageName); ?>
+                </h1>
+            <?php else : ?>
+                <h1 class="display-4 fw-bolder">Car and phone store</h1>
+            <?php endif; ?>
+            <p class="lead fw-normal text-white-50 mb-0">PMS EraaSoft</p>
         </div>
     </div>
 </header>
